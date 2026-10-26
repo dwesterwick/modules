@@ -59,6 +59,8 @@ public class SPTSingleplayerPlugin : BaseUnityPlugin
             new RemoveTransitionRaidModeSetPatch().Enable();
             new FixDisableBossSpawningOptionPatch().Enable();
             new DisableHideoutCounterResetPatch().Enable();
+            new KeepServerTotalInGameTimesPatch().Enable();
+            new AddPlayTimeToProfilePatch().Enable();
         }
         catch (Exception ex)
         {
